@@ -216,7 +216,7 @@ function GameDapp() {
         <Toolbar>
           <SportsEsports sx={{ mr: 2 }} />
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Web3 1v1 Games
+            Polka Play - A Staking Arena
           </Typography>
           {account ? (
             <Chip
