@@ -1,4 +1,4 @@
-# Polka Play - A Staking Game
+# Polka Play - A Staking Arena
 
 ## Overview
 
@@ -22,10 +22,6 @@ Welcome to **Polka Play**, an engaging staking game built on the Polkadot networ
 * **Asset Security:** Your digital assets remain exclusively yours; no third parties have access to them.
 
 ---
-
-## Getting Started
-
-*(Further instructions on how to set up the project, connect to the Polkadot network, and start playing would go here. This typically includes prerequisites, installation steps, and how to run the game.)*
 
 ### Licence
 [![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)  
