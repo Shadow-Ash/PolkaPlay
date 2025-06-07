@@ -170,7 +170,7 @@ export default function GameDapp() {
       </div>
       <div style={{ marginTop: 32, color: "#888" }}>
         <small>
-          Hackathon Minimal UI. For real games, add board UI/state sync.
+          Still in Development Phase - This is a basic prototype for a demo.
         </small>
       </div>
     </div>
