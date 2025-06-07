@@ -1,5 +1,5 @@
-import React from "react";
-import GameDapp from "./GameDapp";
+import React from 'react';
+import GameDapp from './GameDapp';
 function App() {
   return <GameDapp />;
 }

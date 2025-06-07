@@ -17,9 +17,7 @@ import {
   Avatar,
   Chip
 } from '@mui/material';
-import CasinoIcon from '@mui/icons-material/Casino';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import { Casino, AccountCircle, SportsEsports } from '@mui/icons-material';
 
 // Replace with your contract address and ABI
 const CONTRACT_ADDRESS = "YOUR_DEPLOYED_CONTRACT_ADDRESS";
@@ -185,12 +183,12 @@ function GameDapp() {
         {cellNumber}
         {isPlayer && (
           <Avatar sx={{ width: 20, height: 20, position: 'absolute', bottom: -10, right: -10, bgcolor: 'green' }}>
-            <AccountCircleIcon fontSize="small" />
+            <AccountCircle fontSize="small" />
           </Avatar>
         )}
         {isOpponent && (
           <Avatar sx={{ width: 20, height: 20, position: 'absolute', top: -10, left: -10, bgcolor: 'red' }}>
-            <AccountCircleIcon fontSize="small" />
+            <AccountCircle fontSize="small" />
           </Avatar>
         )}
       </Paper>
@@ -216,13 +214,13 @@ function GameDapp() {
     <Box sx={{ minHeight: '100vh', bgcolor: '#f5f5f5' }}>
       <AppBar position="static">
         <Toolbar>
-          <SportsEsportsIcon sx={{ mr: 2 }} />
+          <SportsEsports sx={{ mr: 2 }} />
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Web3 1v1 Games
           </Typography>
           {account ? (
             <Chip
-              avatar={<AccountCircleIcon />}
+              avatar={<AccountCircle />}
               label={account.slice(0, 6) + "..." + account.slice(-4)}
               color="primary"
             />
@@ -254,7 +252,7 @@ function GameDapp() {
                   <>
                     <Button
                       variant="contained"
-                      startIcon={<CasinoIcon />}
+                      startIcon={<Casino />}
                       onClick={createGame}
                       disabled={!account}
                       sx={{ mr: 2, mb: 2 }}
@@ -304,7 +302,7 @@ function GameDapp() {
                     ) : (
                       <Button
                         variant="contained"
-                        startIcon={<CasinoIcon />}
+                        startIcon={<Casino />}
                         onClick={playTurn}
                         disabled={!gameState || gameState.currentPlayer !== account || gameState.gameEnded}
                         sx={{ mt: 2 }}
